@@ -1,0 +1,156 @@
+body {
+  background: #fff;
+}
+
+.login_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.login_container .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.login_container .login .login_form_container {
+  width: 60%;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.login_head {
+  margin: 1rem 0;
+}
+
+.login_head span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.login_head p {
+  color: var(--font_light);
+  font-weight: normal;
+}
+
+.input_group .input_box {
+  margin-bottom: 0.5rem;
+  line-height: 2;
+}
+
+.input_group .input_box .input {
+  position: relative;
+}
+
+.input_group .input_box label {
+  display: block;
+  color: var(--font_light);
+}
+
+.input_group .input_box input,
+.input_group .input_grids .input_box .input select {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #607d8d;
+  outline: none;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  font-family: var(--primary_font);
+  color: var(--font_light);
+  padding: 0 3.3rem;
+}
+
+.input_group .input_grids .input_box .input select {
+  padding: 0 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.input_group .input_box i {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--font_light);
+}
+
+.input_group .input_box input:focus-visible {
+  outline: 2px solid var(--admin_badge);
+}
+
+.input_group .input_grids .input_box .input select:focus-visible {
+  outline: 2px solid var(--admin_badge);
+}
+
+.rmbr_forgot {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rmbr_forgot .rmbr label {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--font_light);
+  cursor: pointer;
+}
+
+.rmbr_forgot .forgot_pass a {
+  color: var(--admin_badge);
+  transition: var(--transition_2s);
+}
+
+.input_group .continue {
+  margin-bottom: 1rem;
+}
+
+.input_group .continue button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  font-family: var(--primary_font);
+  background: var(--admin_badge);
+  color: #fff;
+  font-size: 1.2rem;
+  transition: var(--transition_2s);
+  cursor: pointer;
+}
+
+.input_group .continue button:is(:hover, :focus-visible) {
+  background: var(--button_bg);
+}
+
+.login_form_container .signup {
+  text-align: center;
+  color: var(--font_light);
+}
+
+.login_form_container .signup a {
+  color: var(--admin_badge);
+  transition: var(--transition_2s);
+}
+
+.login_container .db_preview {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.login_container .db_preview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
